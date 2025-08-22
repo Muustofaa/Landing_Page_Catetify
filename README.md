@@ -6,7 +6,7 @@ Landing page resmi untuk aplikasi **Catetify** – solusi pencatatan keuangan un
 
 ## Demo
  
-[[https://yourdomain.com](https://catetify.vercel.app/)]
+[[Catetify](https://catetify.vercel.app/)]
 
 ---
 
