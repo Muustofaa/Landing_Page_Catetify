@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catetify</title>
+  <meta name="description" content="Aplikasi Catat UMKM">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Optional: Google Font Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between bg-transparent">
+  <!-- Logo -->
+  <a href="#hero" class="flex items-center z-50">
+    <img src="favicon.ico" class="w-8 h-8 mr-2 rounded-full" />
+  </a>
+
+  <!-- Menu Tengah (Desktop) -->
+  <div class="absolute left-1/2 -translate-x-1/2 hidden sm:block">
+    <div class="flex gap-4 sm:gap-5 px-2 py-1 rounded-full bg-white/10 backdrop-blur-md">
+      <a href="#hero" class="px-3 py-0.5 rounded-full text-green-800 transition-all duration-400 hover:bg-lime-500 hover:text-black text-sm sm:text-base">Home</a>
+      <a href="#feature" class="px-3 py-0.5 rounded-full text-green-800 transition-all duration-400 hover:bg-lime-500 hover:text-black text-sm sm:text-base">Features</a>
+      <a href="#faq" class="px-3 py-0.5 rounded-full text-green-800 transition-all duration-400 hover:bg-lime-500 hover:text-black text-sm sm:text-base">FAQ</a>
+    </div>
+  </div>
+
+<!-- Hamburger Button -->
+<button id="mobileMenuBtn" class="sm:hidden text-green-800 z-50 flex items-center">
+  <!-- Icon Menu -->
+  <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+  <!-- Icon Close -->
+  <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+  </svg>
+</button>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-white/20 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transform transition-transform duration-500 sm:hidden -translate-x-full">
+  <a href="#hero" class="mobile-link text-green-800 text-2xl px-5 py-2 rounded-full hover:bg-lime-500 hover:text-white transition">Home</a>
+  <a href="#feature" class="mobile-link text-green-800 text-2xl px-5 py-2 rounded-full hover:bg-lime-500 hover:text-white transition">Features</a>
+  <a href="#faq" class="mobile-link text-green-800 text-2xl px-5 py-2 rounded-full hover:bg-lime-500 hover:text-white transition">FAQ</a>
+</div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex flex-col items-center justify-center text-center min-h-screen px-6 py-20">
+  <!-- Title -->
+  <h1 class="text-4xl md:text-6xl font-extrabold text-green-600 leading-tight">
+    <span class="text-green-950">Satu Aplikasi</span>, Solusi <br />
+    Pencatatan Keuangan <span>UMKM</span>
+  </h1>
+
+  <!-- Subtitle -->
+  <p class="mt-6 text-lg md:text-xl text-green-800 italic max-w-2xl">
+    Kelola stok, cash flow, dan laporan bisnis Anda dengan mudah offline maupun online.
+  </p>
+
+  <!-- Button -->
+  <div class="mt-8">
+    <button class="bg-lime-500 text-green-950 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-lime-300 transition-all duration-300">
+      Coming Soon
+    </button>
+  </div>
+</section>
+
+  <!-- Features Section -->
+<section id="feature" class="flex flex-col items-center justify-center min-h-screen px-6 py-20">
+  <div class="max-w-7xl mx-auto">
+    <!-- Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-12">
+      Fitur & Keunggulan Produk
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-5 items-center">
+      <!-- Left - Features List -->
+      <div class="space-y-4">
+        <div class="bg-green-600 rounded-2xl p-5 shadow-md hover:bg-green-600/80 transition-all">
+          <h3 class="text-lg font-semibold text-white">Pencatatan Super Cepat</h3>
+          <p class="text-white text-sm mt-1">
+            Semua transaksi keuangan bisa dicatat hanya dalam hitungan detik, tanpa ribet.
+          </p>
+        </div>
+        <div class="bg-green-600 rounded-2xl p-5 shadow-md hover:bg-green-600/80 transition-all">
+          <h3 class="text-lg font-semibold text-white">Stok Selalu Terkontrol</h3>
+          <p class="text-white text-sm mt-1">
+            Sistem one-click stok management memudahkan pemantauan barang masuk & keluar.
+          </p>
+        </div>
+        <div class="bg-green-600 rounded-2xl p-5 shadow-md hover:bg-green-600/80 transition-all">
+          <h3 class="text-lg font-semibold text-white">Laporan Otomatis & Akurat</h3>
+          <p class="text-white text-sm mt-1">
+            Cash flow, pengeluaran, hingga performa usaha tersaji otomatis.
+          </p>
+        </div>
+        <div class="bg-green-600 rounded-2xl p-5 shadow-md hover:bg-green-600/80 transition-all">
+          <h3 class="text-lg font-semibold text-white">Bisa Offline, Data Tetap Aman</h3>
+          <p class="text-white text-sm mt-1">
+            Aplikasi bisa digunakan tanpa internet, data tetap tersimpan di perangkat & backup ke Google Drive.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right - Mockup Image -->
+      <div class="flex justify-center relative">
+        <img src="mockup.png" alt="App Mockup" class="drop-shadow-2xl w-80 md:w-96" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ Section -->
+<section id="faq" class="min-h-screen flex flex-col justify-center items-center text-green-800 py-20">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12">FAQ</h2>
+  <div class="grid md:grid-cols-2 gap-5 w-11/12 max-w-10xl">
+    <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-600/80 transition">
+      <h3 class="font-semibold text-lg mb-2 text-white">Apakah Catetify bisa dipakai tanpa internet?</h3>
+      <p class="text-white">
+        Ya. Catetify bisa berjalan offline, semua data tersimpan aman di perangkat. Jika ada internet, data otomatis bisa di-backup ke Google Drive.
+      </p>
+    </div>
+    <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-600/80 transition">
+      <h3 class="font-semibold text-lg mb-2 text-white">Apakah data saya aman?</h3>
+      <p class="text-white">
+        Sangat aman. Data disimpan di perangkat Anda dan hanya Anda yang punya akses. Backup ke cloud (Google Drive) juga terenkripsi.
+      </p>
+    </div>
+    <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-600/80 transition">
+      <h3 class="font-semibold text-lg mb-2 text-white">Apakah Catetify berbayar?</h3>
+      <p class="text-white">
+        Catetify menyediakan versi gratis dengan fitur utama. Untuk fitur premium seperti laporan lanjutan & analisis AI, tersedia paket berbayar terjangkau.
+      </p>
+    </div>
+    <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-600/80 transition">
+      <h3 class="font-semibold text-lg mb-2 text-white">Saya gaptek, apakah susah dipakai?</h3>
+      <p class="text-white">
+        Tidak. Catetify didesain dengan tampilan sederhana, mudah dipahami, dan bisa dipakai siapa saja tanpa harus paham teknologi.
+      </p>
+    </div>
+    <div class="bg-green-600 p-6 rounded-2xl shadow-lg hover:bg-green-600/80 transition">
+      <h3 class="font-semibold text-lg mb-2 text-white">Apakah cocok untuk warung kecil atau hanya untuk bisnis besar?</h3>
+      <p class="text-white">
+        Cocok untuk semua skala UMKM, mulai dari warung kecil, supplier, hingga bisnis berkembang.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-neutral-950 text-gray-300 pt-12 pb-6 py-20">
+  <div class="max-w-6xl mx-auto px-6 md:px-12">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center border-b border-neutral-800 pb-10 gap-10 md:gap-0">
+      <!-- Kiri -->
+      <div class="flex-1">
+        <div class="flex items-center mb-4">
+          <img src="favicon2.ico" alt="Catetify Logo" class="object-contain rounded-2xl w-[150px] h-[50px]" />
+        </div>
+        <p class="text-gray-400 max-w-md">
+          Catetify adalah aplikasi pencatatan keuangan simpel untuk UMKM, warung, dan supplier. Misi kami adalah bikin pencatatan jadi lebih mudah, cepat, dan rapi, supaya kamu bisa fokus ke bisnis, bukan ribet di catatan.
+        </p>
+      </div>
+
+      <!-- Kanan -->
+      <div class="flex flex-col space-y-4 md:ml-12">
+        <div class="flex items-center gap-3 hover:text-white transition">
+          <!-- Instagram SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.92 4.92 0 0 1 1.78 1.044 4.918 4.918 0 0 1 1.044 1.78c.163.46.35 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.92 4.92 0 0 1-1.044 1.78 4.918 4.918 0 0 1-1.78 1.044c-.46.163-1.26.35-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.92 4.92 0 0 1-1.78-1.044 4.918 4.918 0 0 1-1.044-1.78c-.163-.46-.35-1.26-.403-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.92 4.92 0 0 1 1.044-1.78 4.918 4.918 0 0 1 1.78-1.044c.46-.163 1.26-.35 2.43-.403 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.333.012 7.052.07 5.777.128 4.658.314 3.75.636a7.077 7.077 0 0 0-2.544 1.633A7.073 7.073 0 0 0 .636 4.812c-.322.908-.508 2.027-.566 3.302C0 8.333 0 8.756 0 12c0 3.244.012 3.667.07 4.948.058 1.275.244 2.394.566 3.302a7.077 7.077 0 0 0 1.633 2.544 7.073 7.073 0 0 0 2.544 1.633c.908.322 2.027.508 3.302.566C8.333 24 8.756 24 12 24s3.667-.012 4.948-.07c1.275-.058 2.394-.244 3.302-.566a7.077 7.077 0 0 0 2.544-1.633 7.073 7.073 0 0 0 1.633-2.544c.322-.908.508-2.027.566-3.302C24 15.667 24 15.244 24 12s-.012-3.667-.07-4.948c-.058-1.275-.244-2.394-.566-3.302a7.077 7.077 0 0 0-1.633-2.544 7.073 7.073 0 0 0-2.544-1.633c-.908-.322-2.027-.508-3.302-.566C15.667.012 15.244 0 12 0z"/>
+            <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zM18.406 4.594a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+          </svg>
+          <a href="https://instagram.com/catetify.id" target="_blank">catetify.id</a>
+        </div>
+        <div class="flex items-center gap-3 hover:text-white transition">
+          <!-- Mail SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8m0 8H3V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8z"/>
+          </svg>
+          <a href="mailto:catetify@gmail.com">catetify@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-gray-500 text-sm mt-6">
+      © 2025 Catetify. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <!-- JS untuk load komponen modular -->
+  <script src="main.js"></script>
+</body>
+</html>

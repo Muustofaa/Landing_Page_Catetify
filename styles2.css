@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Background default */
+body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      background: 
+        radial-gradient(circle at 50% -30%,#87e54b 10%, transparent 45%),
+        radial-gradient(circle at 130% 40%,#87e54b 0%, transparent 45%),
+        radial-gradient(circle at -30% 100%,#87e54b 0%, transparent 45%),
+        #ffffff;
+    }
+
+/* Glass effect */
+.glass {
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
